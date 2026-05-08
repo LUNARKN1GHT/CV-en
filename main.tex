@@ -1,3 +1,4 @@
+% !TEX program = xelatex
 %%%% 原模板参考了https://www.wondercv.com/的模板
 \documentclass[11pt]{article}
 % disable indent globally
@@ -128,6 +129,13 @@ GPA： 3.21 / 4.30
 
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faUniversity}\ Research \& Projects}
 
+\textbf{Undergraduate Innovation Project} \quad Project Leader \hfill May 2026 -- May 2027
+\begin{itemize}
+    \item Investigating originality metrics for LLM-generated Alpha factors; proposed a multi-dimensional similarity framework (expression, numerical, semantic, economic) with regularization to suppress redundant factors.
+    \item Building factor generation and evaluation pipeline using Qlib + DeepSeek API; reproducing AlphaAgent baseline.
+    \item Leading team formation, technical roadmap design, and member training.
+\end{itemize}
+
 \textbf{Quantitative Trading Contest} \quad Team Member \hfill Jul 2025 -- Dec 2025
 \begin{itemize}
     \item Built Python trading strategies and backtesting framework for multiple futures
@@ -141,17 +149,12 @@ GPA： 3.21 / 4.30
     \item Processed financial text data, explored NLP features for trading
 \end{itemize}
 
-\textbf{Effects of Gaming on Adolescents} \quad Project Leader \hfill Mar 2025 -- Jun 2025
+\textbf{Quant-Lab: Quantitative Research Platform} \quad Solo Developer \hfill Feb 2026 -- Present
 \begin{itemize}
-    \item Collected 200+ survey responses, analyzed gaming vs. study/lifestyle
+    \item Independently designed and developed a modular quant research platform covering data acquisition, factor construction, backtesting, and performance visualization.
+    \item Applied ML methods and statistical arbitrage strategies to achieve profitability on historical datasets.
+    \item Adopted engineering: config-driven management, unit testing, and technical documentation.
 \end{itemize}
-
-\textbf{Maternal \& Infant Product Sales Analysis} \quad Project Leader \hfill Dec 2024
-\begin{itemize}
-    \item Cleaned \& analyzed 100,000 e-commerce transactions
-    \item Generated insights on user behavior and product categories
-\end{itemize}
-
 
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faUsers}\ Student Activities}
 
@@ -170,7 +173,8 @@ GPA： 3.21 / 4.30
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faWrench}\ Skills}
 
 \begin{itemize}
-    \item Programming: Python (Data Analysis / Quantitative Modeling), C/C++
+    \item Programming: Python (pandas, numpy, scikit-learn), C/C++
+    \item Data \& Modeling: SQL, factor modeling, strategy backtesting
     \item Tools \& Platforms: Git, Conda, Jupyter Notebook
     \item Documentation: \LaTeX{}, Markdown, Zotero
 \end{itemize}
