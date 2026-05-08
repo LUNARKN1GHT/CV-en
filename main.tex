@@ -91,15 +91,15 @@ BoldFont=ProGB18030 DemiBold.otf,
 \pagenumbering{gobble} % suppress displaying page number
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay]
-	\node[anchor = north east] at ($(current page.north east)+(-1cm,-0.6cm)$) {\includegraphics[height=2.8cm]{img/myself_white.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-1cm,-0.6cm)$) {\includegraphics[height=2.8cm]{img/myself_white.jpg}};
 \end{tikzpicture}%
 %%%% 利用tikz来定位学校Logo，这里只在第一页显示，如果需要每页都有，可以考虑在页眉、页脚或者background中加入，不过简历也就一两页，无所谓了
 \begin{tikzpicture}[remember picture, overlay]
-	\node[anchor = north west] at ($(current page.north west)+(0.2cm,-0.2cm)$) {\includegraphics[height=1.5cm]{img/ustcfull.jpg}};
+    \node[anchor = north west] at ($(current page.north west)+(0.2cm,-0.2cm)$) {\includegraphics[height=1.5cm]{img/ustcfull.jpg}};
 \end{tikzpicture}%
 %%%% 利用tikz来定位页脚栏，电子版简历使用，黑白纸质打印效果可能并不好。这里只在第一页显示，如果需要每页都有，页脚或者background中加入。
-\begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = south,fill=CVBlue,draw=none,minimum width=\paperwidth,minimum height=1.5em,align=center,font=\footnotesize,text=white] at ($(current page.south)$) 
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor = south,fill=CVBlue,draw=none,minimum width=\paperwidth,minimum height=1.5em,align=center,font=\footnotesize,text=white] at ($(current page.south)$)
     {\faGithubAlt \ \href{https://github.com/LUNARKN1GHT}{https://github.com/LUNARKN1GHT} \qquad \faRssSquare \ \href{https://LUNARKN1GHT.github.io}{https://LUNARKN1GHT.github.io}};
 \end{tikzpicture}
 
@@ -108,11 +108,11 @@ BoldFont=ProGB18030 DemiBold.otf,
 \centerline{\LARGE\bfseries{Yi-Fan Li}}
 
 \centerline{\normalsize{
-		\faPhone \ +86 187 2094 6768 \quad
-		\faEnvelopeO \ \href{mailto:lyf0402@mail.ustc.edu.cn}{lyf0402@mail.ustc.edu.cn}}}
+        \faPhone \ +86 187 2094 6768 \quad
+        \faEnvelopeO \ \href{mailto:lyf0402@mail.ustc.edu.cn}{lyf0402@mail.ustc.edu.cn}}}
 %%最好用你的edu邮箱
 
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\  Education}
+\section[Education]{{\mdseries\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}}\  Education}
 
 \textbf{University of Science and Technology of China (USTC)} \hfill \textbf{B.Sc. in Statistics} \hfill \textbf{Sep 2024 -- Present}
 
@@ -120,14 +120,14 @@ GPA： 3.21 / 4.30
 
 \textbf{Core Courses:} Mathematical Analysis, Linear Algebra, Probability Theory, Data Structures
 
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faTrophy}\ Awards}
+\section[Awards]{{\mdseries\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faTrophy}}\ Awards}
 \begin{itemize}
-	\item Excellent Student Scholarship (Bronze), Ericaceae Scholarship (School-level)
-	\item Outstanding Freshman Scholarship, USTC
+    \item Excellent Student Scholarship (Bronze), Ericaceae Scholarship (School-level)
+    \item Outstanding Freshman Scholarship, USTC
     \item "Zhizhidao" Geek Center Outstanding Member (2025--2026, 3 times)
 \end{itemize}
 
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faUniversity}\ Research \& Projects}
+\section[Research \& Projects]{{\mdseries\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faUniversity}}\ Research \& Projects}
 
 \textbf{Undergraduate Innovation Project} \quad Project Leader \hfill May 2026 -- May 2027
 \begin{itemize}
@@ -156,13 +156,13 @@ GPA： 3.21 / 4.30
     \item Adopted engineering: config-driven management, unit testing, and technical documentation.
 \end{itemize}
 
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faUsers}\ Student Activities}
+\section[Student Activities]{{\mdseries\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faUsers}}\ Student Activities}
 
 \begin{itemize}
     \item President, Student Union, School of Management, USTC \hfill Jun 2025 -- Present
-    \begin{itemize}
-        \item Managed union operations and events; liaised with faculty
-    \end{itemize}
+          \begin{itemize}
+              \item Managed union operations and events; liaised with faculty
+          \end{itemize}
 
     \item Officer, News \& Publicity Department, Student Union \hfill Sep 2024 -- Jun 2025
 
@@ -170,7 +170,7 @@ GPA： 3.21 / 4.30
 \end{itemize}
 
 
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faWrench}\ Skills}
+\section[Skills]{{\mdseries\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faWrench}}\ Skills}
 
 \begin{itemize}
     \item Programming: Python (pandas, numpy, scikit-learn), C/C++
